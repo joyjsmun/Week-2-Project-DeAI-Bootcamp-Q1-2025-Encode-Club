@@ -10,14 +10,16 @@ Key features include:
 - Clean, responsive user interface
 
 ## Live Demo
-[Insert your deployed application link here]
+[Insert our deployed application link here]
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
-- Node.js 18.0 or later
-- npm (Node package manager)
-- OpenAI API key or equivalent AI provider key
-- Git for version control
+
+- You have installed Python 3.8 or later.
+- You have installed pip (Python package installer).
+- You have set up your OpenAI API key.
+- Make sure that the OpenAI API key is stored in an environment variable named exactly OPENAI_API_KEY.
+
 
 ## Installation
 
@@ -67,8 +69,8 @@ The application uses AI to evaluate jokes based on multiple criteria:
 ## Technical Implementation
 
 ### Frontend
-- Built with NextJS and React
-- Responsive design using Tailwind CSS
+- Built with NextJS
+- CCS using Tailwind CSS
 - Interactive UI components for parameter selection
 
 ### Backend
