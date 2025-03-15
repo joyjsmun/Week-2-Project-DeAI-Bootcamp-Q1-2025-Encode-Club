@@ -112,4 +112,5 @@ Our team experimented with various prompt configurations to optimize joke genera
 
 ## Contributors
 - [joyjsmun](https://github.com/joyjsmun) (Unique ID: OFVwFA)
+- [nvinnikov](https://github.com/nvinnikov) (Unique ID: VvZfPu)
 - ADD more later
