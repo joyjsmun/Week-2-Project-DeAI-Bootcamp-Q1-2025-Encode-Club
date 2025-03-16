@@ -19,6 +19,7 @@ Before you begin, ensure you have met the following requirements:
 - You have installed pip (Python package installer).
 - You have set up your OpenAI API key.
 - Make sure that the OpenAI API key is stored in an environment variable named exactly OPENAI_API_KEY.
+- You have installed Node.js and npm. At least version 20 or higher.
 
 
 ## Installation
@@ -27,6 +28,7 @@ Before you begin, ensure you have met the following requirements:
     ```sh
     git clone https://github.com/joyjsmun/Week-2-Project-DeAI-Bootcamp-Q1-2025-Encode-Club.git
     cd Week-2-Project-DeAI-Bootcamp-Q1-2025-Encode-Club
+    cd ai-joke-generator
     ```
 
 2. **Install Dependencies**:
@@ -113,4 +115,5 @@ Our team experimented with various prompt configurations to optimize joke genera
 ## Contributors
 - [joyjsmun](https://github.com/joyjsmun) (Unique ID: OFVwFA)
 - [nvinnikov](https://github.com/nvinnikov) (Unique ID: VvZfPu)
+- [ifanzalukhu97](https://github.com/ifanzalukhu97) (Unique ID: S3lFve)
 - ADD more later
