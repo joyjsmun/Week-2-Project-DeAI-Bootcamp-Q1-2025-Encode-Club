@@ -1,1 +1,5 @@
 .idea
+ai-joke-generator/.next
+next-env.d.ts
+.env.local
+package-lock.json
