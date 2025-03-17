@@ -2,7 +2,7 @@
 
 A modern, futuristic web application that generates AI-powered jokes using GPT-4, complete with text-to-speech and image generation capabilities.
 
-![AI Joke Generator Screenshot](./image.png)
+![AI Joke Generator Screenshot](./ai-joke-generator/image.png)
 
 ## Features ✨
 
