@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --neon-blue: #00f3ff;
+  --neon-purple: #9d00ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,15 +21,39 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
+      to bottom right,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(157, 0, 255, 0.3), transparent 50%),
+    radial-gradient(circle at 0% 50%, rgba(0, 243, 255, 0.2), transparent 50%),
+    radial-gradient(circle at 100% 50%, rgba(157, 0, 255, 0.2), transparent 50%);
+  background-attachment: fixed;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px var(--neon-blue),
+                 0 0 20px var(--neon-blue),
+                 0 0 30px var(--neon-blue);
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 5px var(--neon-blue),
+                0 0 10px var(--neon-blue),
+                inset 0 0 5px var(--neon-blue);
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
