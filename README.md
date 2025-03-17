@@ -1,119 +1,113 @@
-# Week 2 Project - DeAI Bootcamp Q1 2025 - AI Joke Generator
+# AI Joke Generator 🤖😄
 
-## Project Description
-This project showcases an AI-powered joke generator built with NextJS. Users can customize various parameters to generate personalized jokes tailored to their preferences. The application also features an AI evaluation system that assesses jokes based on criteria such as humor, appropriateness, and potential offensiveness.
+A modern, futuristic web application that generates AI-powered jokes using GPT-4, complete with text-to-speech and image generation capabilities.
 
-Key features include:
-- Parameter customization for joke generation
-- Real-time joke generation using AI
-- AI-powered joke evaluation system
-- Clean, responsive user interface
+![AI Joke Generator Screenshot](./image.png)
 
-## Live Demo
-[Insert our deployed application link here]
+## Features ✨
 
-## Prerequisites
-Before you begin, ensure you have met the following requirements:
+- **AI-Powered Joke Generation** 🎯
+  - Choose from multiple topics (work, animals, food, television, sports)
+  - Select different tones (witty, sarcastic, silly, dark, goofy)
+  - Various joke types (pun, knock-knock, story, one-liner)
+  - Adjustable creativity level
 
-- You have installed Python 3.8 or later.
-- You have installed pip (Python package installer).
-- You have set up your OpenAI API key.
-- Make sure that the OpenAI API key is stored in an environment variable named exactly OPENAI_API_KEY.
-- You have installed Node.js and npm. At least version 20 or higher.
+- **Multi-Modal Output** 🎨
+  - Text-based jokes
+  - AI-generated illustrations
+  - Text-to-speech audio playback
 
+- **Smart Evaluation** 📊
+  - AI-powered joke analysis
+  - Humor rating
+  - Appropriateness check
+  - Originality score
 
-## Installation
+- **Social Features** 🌐
+  - Share jokes on Twitter
+  - Share jokes on Facebook
+  - Save joke history
 
-1. **Clone the Repository**:
-    ```sh
-    git clone https://github.com/joyjsmun/Week-2-Project-DeAI-Bootcamp-Q1-2025-Encode-Club.git
-    cd Week-2-Project-DeAI-Bootcamp-Q1-2025-Encode-Club
-    cd ai-joke-generator
-    ```
+## Getting Started 🚀
 
-2. **Install Dependencies**:
-    ```sh
-    npm install
-    ```
+### Prerequisites
 
-3. **Environment Setup**:
-    Create a `.env.local` file in the root directory with the following variables:
-    ```
-    OPENAI_API_KEY=your_openai_api_key_here
-    ```
+- Node.js 18+ installed
+- OpenAI API key
+- ElevenLabs API key
 
-4. **Run the Development Server**:
-    ```sh
-    npm run dev
-    ```
-    The application will be available at `http://localhost:3000`
+### Installation
 
-## How to Use
-
-### Joke Generation
-1. Visit the main page of the application
-2. Customize your joke parameters:
-   - Select a topic (e.g., work, animals, food)
-   - Choose a tone (e.g., witty, sarcastic, silly)
-   - Pick a joke type (e.g., pun, knock-knock, story)
-   - Adjust the creativity level (temperature)
-3. Click the "Generate Joke" button
-4. View your customized joke on the screen
-5. See the AI evaluation of your joke's humor and appropriateness
-
-### AI Joke Evaluation
-The application uses AI to evaluate jokes based on multiple criteria:
-- Humor rating (1-10)
-- Appropriateness assessment
-- Potential offensiveness check
-- Originality score
-
-## Technical Implementation
-
-### Frontend
-- Built with NextJS
-- CCS using Tailwind CSS
-- Interactive UI components for parameter selection
-
-### Backend
-- NextJS API routes for handling requests
-- Integration with OpenAI API for joke generation
-- Custom prompt engineering for joke customization
-- Specialized evaluation system using AI classification
-
-### Prompt Engineering
-The application uses carefully crafted prompts to guide the AI in generating jokes that match the user's preferences. System instructions are optimized for subjective tasks like humor and appropriateness assessment.
-
-Example prompt structure:
-```
-You are a comedy writer specializing in {jokeType} jokes with a {tone} tone.
-Write a joke about {topic} that is both humorous and appropriate.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd ai-joke-generator
 ```
 
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Experimental Results
+3. Create a `.env.local` file in the root directory:
+```env
+# OpenAI API Key
+OPENAI_API_KEY=your_openai_api_key_here
 
-Our team experimented with various prompt configurations to optimize joke generation and evaluation:
+# ElevenLabs API Key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
+```
 
-1. **System Instruction Variations**:
-   - We tested different persona instructions for the AI
-   - Compared direct vs. creative instruction styles
-   - Analyzed results based on user feedback
+4. Start the development server:
+```bash
+npm run dev
+```
 
-2. **Parameter Impact Analysis**:
-   - Tested how temperature affects joke quality
-   - Evaluated the impact of different topic selections
-   - Analyzed how tone selection influences humor ratings
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-3. **Evaluation Prompt Engineering**:
-   - Developed specialized prompts for subjective assessment
-   - Tested different scoring systems
-   - Implemented multi-criteria evaluation frameworks
+## Usage Examples 💡
 
-[Include screenshots of your application here]
+### Generating a Joke
 
-## Contributors
-- [joyjsmun](https://github.com/joyjsmun) (Unique ID: OFVwFA)
-- [nvinnikov](https://github.com/nvinnikov) (Unique ID: VvZfPu)
-- [ifanzalukhu97](https://github.com/ifanzalukhu97) (Unique ID: S3lFve)
-- ADD more later
+1. Select your desired parameters:
+   - Topic: Choose from work, animals, food, etc.
+   - Tone: Select witty, sarcastic, silly, etc.
+   - Type: Pick pun, knock-knock, story, or one-liner
+   - Adjust the creativity slider
+
+2. Click "Generate Joke"
+3. Wait for the AI to create your custom joke
+
+### Using Text-to-Speech
+
+1. After joke generation, use the audio controls:
+   - Play/Pause: Toggle joke narration
+   - Stop: Reset audio to beginning
+
+### Sharing Jokes
+
+- Click the Twitter icon to share on Twitter
+- Click the Facebook icon to share on Facebook
+
+### Viewing History
+
+- Scroll down to see your recently generated jokes
+- Each joke card shows the text and generation date
+- Hover over cards for a subtle animation effect
+
+## Technical Stack 🛠
+
+- **Frontend**: Next.js 14, React 18
+- **Styling**: Tailwind CSS
+- **AI Integration**: GPT-4o-mini
+- **Text-to-Speech**: ElevenLabs
+- **State Management**: Zustand
+- **UI Components**: React Icons
+
+## Contributing 🤝
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License 📝
+
+This project is licensed under the MIT License - see the LICENSE file for details.
